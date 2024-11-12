@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/murakamitomoki/sim3/build",
+  "command": "/usr/bin/clang++ -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL -isystem /Users/murakamitomoki/geant4-v11.0.0-install/include/Geant4 -isystem /usr/X11R6/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/sim.dir/sim.cc.o -c /Users/murakamitomoki/sim3/sim.cc",
+  "file": "/Users/murakamitomoki/sim3/sim.cc",
+  "output": "CMakeFiles/sim.dir/sim.cc.o"
+},
+{
+  "directory": "/Users/murakamitomoki/sim3/build",
+  "command": "/usr/bin/clang++ -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL -isystem /Users/murakamitomoki/geant4-v11.0.0-install/include/Geant4 -isystem /usr/X11R6/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/sim.dir/run.cc.o -c /Users/murakamitomoki/sim3/run.cc",
+  "file": "/Users/murakamitomoki/sim3/run.cc",
+  "output": "CMakeFiles/sim.dir/run.cc.o"
+},
+{
+  "directory": "/Users/murakamitomoki/sim3/build",
+  "command": "/usr/bin/clang++ -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL -isystem /Users/murakamitomoki/geant4-v11.0.0-install/include/Geant4 -isystem /usr/X11R6/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/sim.dir/action.cc.o -c /Users/murakamitomoki/sim3/action.cc",
+  "file": "/Users/murakamitomoki/sim3/action.cc",
+  "output": "CMakeFiles/sim.dir/action.cc.o"
+},
+{
+  "directory": "/Users/murakamitomoki/sim3/build",
+  "command": "/usr/bin/clang++ -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL -isystem /Users/murakamitomoki/geant4-v11.0.0-install/include/Geant4 -isystem /usr/X11R6/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/sim.dir/construction.cc.o -c /Users/murakamitomoki/sim3/construction.cc",
+  "file": "/Users/murakamitomoki/sim3/construction.cc",
+  "output": "CMakeFiles/sim.dir/construction.cc.o"
+},
+{
+  "directory": "/Users/murakamitomoki/sim3/build",
+  "command": "/usr/bin/clang++ -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL -isystem /Users/murakamitomoki/geant4-v11.0.0-install/include/Geant4 -isystem /usr/X11R6/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/sim.dir/detector.cc.o -c /Users/murakamitomoki/sim3/detector.cc",
+  "file": "/Users/murakamitomoki/sim3/detector.cc",
+  "output": "CMakeFiles/sim.dir/detector.cc.o"
+},
+{
+  "directory": "/Users/murakamitomoki/sim3/build",
+  "command": "/usr/bin/clang++ -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL -isystem /Users/murakamitomoki/geant4-v11.0.0-install/include/Geant4 -isystem /usr/X11R6/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/sim.dir/generator.cc.o -c /Users/murakamitomoki/sim3/generator.cc",
+  "file": "/Users/murakamitomoki/sim3/generator.cc",
+  "output": "CMakeFiles/sim.dir/generator.cc.o"
+},
+{
+  "directory": "/Users/murakamitomoki/sim3/build",
+  "command": "/usr/bin/clang++ -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL -isystem /Users/murakamitomoki/geant4-v11.0.0-install/include/Geant4 -isystem /usr/X11R6/include -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/sim.dir/physics.cc.o -c /Users/murakamitomoki/sim3/physics.cc",
+  "file": "/Users/murakamitomoki/sim3/physics.cc",
+  "output": "CMakeFiles/sim.dir/physics.cc.o"
+}
+]
