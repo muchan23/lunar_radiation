@@ -7,6 +7,10 @@
 
 #include "g4AnalysisManager.hh"
 
+#include <G4Step.hh>
+#include <G4VTouchable.hh>
+#include <G4Track.hh>
+
 class MySensitiveDetector : public G4VSensitiveDetector
 {
 public:

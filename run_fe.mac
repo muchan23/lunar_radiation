@@ -1,0 +1,7 @@
+/run/numberOfThreads 8
+/run/initialize
+/gun/particle ion
+/gun/ion 26 56 0 0  # Z=26 (鉄), A=56, Q=0, E=0
+/gun/momentumAmp 500 GeV
+/gun/position 0 0 -3000 m
+/run/beamOn 1000

@@ -1,0 +1,4 @@
+/run/numberOfThreads 8
+/run/initialize
+/control/execute primary.mac
+/run/beamOn 3000

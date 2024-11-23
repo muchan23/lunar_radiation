@@ -17,7 +17,7 @@ MyDetectorConstruction::MyDetectorConstruction()
 
     DefineMaterials();
 
-    isCherenkov = false;
+    isCherenkov = true;
     isScintillator = false;
     isTOF = false;
     isAtmosphere = false;
@@ -204,7 +204,7 @@ void MyDetectorConstruction::ConstructScintillator()
 
 void MyDetectorConstruction::ConstructCherenkov()
 {
-    solidRadiator = new G4Box("solidRadiator", 0.4*m, 0.4*m, 0.01*m);
+    solidRadiator = new G4Box("solidRadiator", 1000*m, 10000*m, 0.1*m);
 
     logicRadiator = new G4LogicalVolume(solidRadiator, Aerogel, "logicalRadiator");
 

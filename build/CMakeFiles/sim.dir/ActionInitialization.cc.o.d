@@ -1,8 +1,10 @@
-CMakeFiles/sim.dir/generator.cc.o: \
-  /Users/murakamitomoki/sim4/generator.cc \
-  /Users/murakamitomoki/sim4/generator.hh \
+CMakeFiles/sim.dir/ActionInitialization.cc.o: \
+  /Users/murakamitomoki/sim4/ActionInitialization.cc \
+  /Users/murakamitomoki/sim4/ActionInitialization.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VUserActionInitialization.hh \
+  /Users/murakamitomoki/sim4/CustomPrimaryGeneratorAction.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4GeneralParticleSource.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleGun.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/globals.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ios.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Types.hh \
@@ -894,33 +896,11 @@ CMakeFiles/sim.dir/generator.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Event.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/set \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/evtdefs.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Allocator.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4AllocatorPool.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PrimaryVertex.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PrimaryParticle.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VPrimaryGenerator.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ThreeVector.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Utility/defs.h \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/pwdefs.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4HCofThisEvent.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VHitsCollection.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4DCofThisEvent.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VDigiCollection.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4TrajectoryContainer.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VTrajectory.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VUserEventInformation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Profiler.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Profiler.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/PTL/Globals.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/PTL/Types.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/PTL/Utility.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SingleParticleSource.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VPrimaryGenerator.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleMomentum.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleDefinition.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PDefManager.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4AutoLock.hh \
@@ -948,87 +928,26 @@ CMakeFiles/sim.dir/generator.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/thread.h \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/pwdefs.hh \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleDefinition.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SPSPosDistribution.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Navigator.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/geomdefs.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4AffineTransform.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4RotationMatrix.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/Rotation.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/AxisAngle.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationX.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationX.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationY.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationY.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationZ.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/RotationZ.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Vector/Rotation.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Transform3D.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Geometry/Point3D.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4AffineTransform.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4LogicalVolume.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Region.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4GeomSplitter.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/geomwdefs.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Region.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VPhysicalVolume.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VPhysicalVolume.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4LogicalVolume.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4TouchableHandle.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VTouchable.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4TouchableHistory.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationHistory.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationLevel.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationLevelRep.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationLevelRep.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationLevel.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationHistoryPool.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationHistory.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4TouchableHistory.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ReferenceCountedHandle.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NormalNavigation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VNavigation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VSolid.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VSolid.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4AuxiliaryNavServices.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4AuxiliaryNavServices.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NormalNavigation.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VoxelNavigation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4NavigationLogger.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4BlockingList.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4BlockingList.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SmartVoxelProxy.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SmartVoxelProxy.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SmartVoxelNode.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SmartVoxelNode.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SmartVoxelHeader.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SmartVoxelHeader.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VoxelNavigation.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParameterisedNavigation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VPVParameterisation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VVolumeMaterialScanner.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParameterisedNavigation.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ReplicaNavigation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ReplicaNavigation.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4RegularNavigation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4VExternalNavigation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Navigator.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SPSRandomGenerator.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PhysicsFreeVector.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PhysicsVector.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PrimaryVertex.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Allocator.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4AllocatorPool.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PrimaryParticle.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleMomentum.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SystemOfUnits.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleTable.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleTableIterator.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleTable.icc \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4IonTable.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Ions.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ChargedGeantino.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/Randomize.hh \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/Randomize.h \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/DualRand.h \
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandomEngine.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -1047,34 +966,6 @@ CMakeFiles/sim.dir/generator.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Log.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PhysicsVectorType.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4PhysicsVector.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4DataInterpolation.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Cache.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4CacheDetails.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SPSAngDistribution.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SPSEneDistribution.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4GeneralParticleSourceMessenger.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4UImessenger.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4UIdirectory.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4UIcommand.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ApplicationState.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4UIparameter.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4UItokenNum.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4GeneralParticleSourceData.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleGun.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4SystemOfUnits.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleTable.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleTableIterator.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ParticleTable.icc \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4IonTable.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4Ions.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/G4ChargedGeantino.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/Randomize.hh \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/Randomize.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/DualRand.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandomEngine.h \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandomEngine.icc \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/JamesRandom.h \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/MixMaxRng.h \
@@ -1117,4 +1008,5 @@ CMakeFiles/sim.dir/generator.cc.o: \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandPoisson.icc \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
   /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandStudentT.h \
-  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandStudentT.icc
+  /Users/murakamitomoki/geant4-v11.0.0-mt-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /Users/murakamitomoki/sim4/CustomPrimaryGeneratorMessenger.hh

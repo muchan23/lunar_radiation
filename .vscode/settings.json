@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "plot_flux.C": "cpp",
+        "plot_flux_line.C": "cpp",
+        "plot_run_time.C": "cpp",
+        "__locale": "cpp",
+        "plot_new.C": "cpp"
+    }
+}

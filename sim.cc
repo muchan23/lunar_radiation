@@ -1,3 +1,5 @@
+// シミュレーションの初期化、実行、終了を行う
+
 #include <iostream>
 
 #include "G4RunManager.hh"
@@ -22,17 +24,17 @@ int main(int argc, char** argv)
       G4RunManager* runManager = new G4RunManager;
     #endif
 
-    runManager->SetUserInitialization(new MyDetectorConstruction());
-    runManager->SetUserInitialization(new MyPhysicsList());
-    runManager->SetUserInitialization(new MyActionInitialization());
+    runManager->SetUserInitialization(new MyDetectorConstruction()); //検出器の構築
+    runManager->SetUserInitialization(new MyPhysicsList()); //物理リストの設定
+    runManager->SetUserInitialization(new MyActionInitialization()); // アクションの設定
 
-    G4VModularPhysicsList* physics = new QGSP_BERT();
+    G4VModularPhysicsList* physics = new QGSP_BERT(); // 物理リストの設定
     physics->RegisterPhysics(new G4DecayPhysics());
-    runManager->SetUserInitialization(physics);
+    runManager->SetUserInitialization(physics); //物理リストをrunManagerに設定
 
     if (argc == 1)
     {
-        ui = new G4UIExecutive(argc, argv);
+        ui = new G4UIExecutive(argc, argv); //
     }
 
     G4VisManager *visManager = new G4VisExecutive();

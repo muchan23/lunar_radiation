@@ -3,6 +3,7 @@
 MyPrimaryGenerator::MyPrimaryGenerator()
 {
     fParticleGun = new G4ParticleGun(1);
+    fParticleSource = new G4GeneralParticleSource();
 
     G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
     G4ParticleDefinition *particle = particleTable->FindParticle("chargedgeantino");
@@ -19,6 +20,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 MyPrimaryGenerator::~MyPrimaryGenerator()
 {
     delete fParticleGun;
+    delete fParticleSource;
 }
 
 void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
@@ -39,4 +41,5 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
     }
 
     fParticleGun->GeneratePrimaryVertex(anEvent);
+    fParticleSource->GeneratePrimaryVertex(anEvent);
 }

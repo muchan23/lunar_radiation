@@ -1,4 +1,6 @@
 #include "run.hh"
+#include "G4Run.hh"
+#include "G4AnalysisManager.hh"
 
 MyRunAction::MyRunAction()
 {
@@ -11,6 +13,7 @@ MyRunAction::MyRunAction()
     man->CreateNtupleDColumn("fZ");
     man->CreateNtupleDColumn("fT");
     man->CreateNtupleDColumn("fWlen");
+    man->CreateNtupleDColumn("fEnergy"); // エネルギー列を追加
     man->FinishNtuple(0);
 
     man->CreateNtuple("Hits", "Hits");
@@ -23,10 +26,18 @@ MyRunAction::MyRunAction()
     man->CreateNtuple("Scoring", "Scoring");
     man->CreateNtupleDColumn("fEdep");
     man->FinishNtuple(2);
+
+    // Ntuple を作成
+    man->CreateNtuple("FlightTime", "FlightTime");
+    man->CreateNtupleIColumn("EventID");
+    man->CreateNtupleDColumn("FlightTime");
+    man->FinishNtuple(3);
 }
 
 MyRunAction::~MyRunAction()
-{}
+{   
+
+}
 
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
@@ -42,6 +53,11 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 
 void MyRunAction::EndOfRunAction(const G4Run*)
 {
+    //時間に関する記述
+    auto analysisManager = G4AnalysisManager::Instance();
+    analysisManager->Write();
+    analysisManager->CloseFile();
+
     G4AnalysisManager *man = G4AnalysisManager::Instance();
 
     man->Write();
